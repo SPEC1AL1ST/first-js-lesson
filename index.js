@@ -46,5 +46,17 @@ var userData={
 };
 
 function login() {
-    console.log("test");
+    // var username = document.getElementById("username").value;
+    // var username = document.getElementsByName("username")[1].value;
+    // var username = document.getElementsByClassName("username")[0].value;
+    // var username = document.getElementsByTagName("input")[0].value;
+    // var form=document.getElementsByName("userForm")[0];
+    // console.log(form);
+    var username=document.getElementsByName("username")[0].value;
+    var password=document.getElementsByName("userpassword")[0].value;
+    console.log({
+        "username":username,
+        "password":password
+    });
+
 }
