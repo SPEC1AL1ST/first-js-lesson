@@ -54,6 +54,14 @@ function login() {
     // console.log(form);
     var username=document.getElementsByName("username")[0].value;
     var password=document.getElementsByName("userpassword")[0].value;
+
+    if(username===userData.login && password===userData.password){
+        alert("Авторизация прошла успешно");
+    }
+    else{
+        alert("Неправильный логин или пароль");
+    }
+
     console.log({
         "username":username,
         "password":password
