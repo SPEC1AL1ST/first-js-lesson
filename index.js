@@ -2,6 +2,49 @@
  * Created by Favorite on 17.11.2016.
  */
 
+var arr=[];
+var testVariable="test";
+var testVariable1=1.02;
+var bool=true;
+var array=["string",12345,true];
+var varOfTestFunction=4;
+var obj= {
+    "row1": 2,
+    "row2": true,
+    "row3": "string",
+    "row4": [],
+    "test-1": 1,
+    "fnc": testFnc,
+    // "fnc1": function () {
+    //     console.log("my func");
+    // }
+    "fnc1": function (arg1) {
+        console.log("arg1");
+    },
+    "fnc5":true
+}
+
+var testFnc=function () {
+    console.log("test")
+};
+
 function test() {
-    alert("working");
+    var varOfTestFunction=1;
+    // testFnc(varOfTestFunction);
+    // alert("varOfTestFunction");
+    // var arr=[];
+    // arr.push(varOfTestFunction);
+    // console.log(arr);
+    // console.log(obj.row1);
+    // console.log(obj["row1"]);
+    obj.fnc1();
+}
+
+var userData={
+    'login':'username',
+    "password":"userpassword"
+};
+
+function login() {
+    console.log("test");
 }
